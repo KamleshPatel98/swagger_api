@@ -27,15 +27,15 @@ class UserController extends Controller
     }
 
     /**
-     * @OA\Post(
-     *     path="/api/users",
-     *     summary="Register a new user",
-     *     tags={"users"},
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             required={"name","email","password","password_confirmation"},
-     *             @OA\Property(property="name", type="string", example="John Doe", maxLength=50),
+    * @OA\Post(
+    *     path="/api/users",
+    *     summary="Register a new user",
+    *     tags={"users"},
+    *     @OA\RequestBody(
+    *         required=true,
+    *         @OA\JsonContent(
+    *             required={"name","email","password","password_confirmation"},
+    *             @OA\Property(property="name", type="string", example="John Doe", maxLength=50),
     *             @OA\Property(property="email", type="string", format="email", example="john@example.com", maxLength=50),
     *             @OA\Property(property="password", type="string", format="password", example="secret123", minLength=8, maxLength=20),
     *             @OA\Property(property="password_confirmation", type="string", format="password", example="secret123")
